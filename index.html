@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vathsalya's Cafe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="top-nav">
+    <div class="nav-row">
+      <div class="nav-col">
+        <a href="./index.html" class="nav-button">HOME</a>
+      </div>
+      <div class="nav-col">
+        <a href="#about" class="nav-button">ABOUT</a>
+      </div>
+      <div class="nav-col">
+        <a href="#menu" class="nav-button">MENU</a>
+      </div>
+      <div class="nav-col">
+        <a href="#where" class="nav-button">WHERE</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" id="home">
+    <div class="header-tag">Open from 7am to 11pm</div>
+    <div class="header-title">Vathsalya's<br>Cafe</div>
+    <div class="header-address">32 Madhapur, Hyderabad, India</div>
+  </header>
+
+  <div class="main-content">
+
+    <!-- About Section -->
+    <section class="content-section" id="about">
+      <h2 class="section-title"><span class="tag">ABOUT Vathsalya'S CAFE</span></h2>
+      <p>Vathsalya's Cafe was started in 2020 by Mrs. Vathsalya in the heart of Hyderabad. With a deep passion for Indian street food and traditional flavors, the cafe blends classic recipes with a modern twist, creating a unique experience for all visitors.</p>
+      <p>We serve authentic South Indian breakfasts, flavorful biryanis, chaat items, and a wide range of Indian beverages. Every dish is made fresh with locally sourced ingredients and lots of love.</p>
+      <div class="quote-box">
+        <p><i>"Swad ka raaz dil se bana khaana." (The secret of taste is food made from the heart.)</i></p>
+        <p>Chef & Founder: Vathsalya </p>
+      </div>
+      <img src="./images/pexels-photo-1307698.jpeg" alt="Cafe interior" class="img-full">
+      <p><strong>Opening hours:</strong> Open daily from 7am to 11pm</p>
+      <p><strong>Address:</strong> 32 Madhapur, Hyderabad, Telangana - 500034</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="content-section" id="menu">
+      <h2 class="section-title"><span class="tag">THE MENU</span></h2>
+
+      <div class="menu-tabs">
+        <div class="menu-tab active" onclick="openMenu('Eat')">Eat</div>
+        <div class="menu-tab" onclick="openMenu('Drinks')">Drink</div>
+      </div>
+
+      <div id="Eat" class="menu-panel active">
+        <div class="menu-item">
+          <h3>Masala Dosa</h3>
+          <p class="menu-item-desc">Crispy rice crepe stuffed with spicy potato masala – ₹80</p>
+        </div>
+        <div class="menu-item">
+          <h3>Paneer Tikka Sandwich</h3>
+          <p class="menu-item-desc">Grilled sandwich filled with marinated paneer and veggies – ₹120</p>
+        </div>
+        <div class="menu-item">
+          <h3>Veg Biryani</h3>
+          <p class="menu-item-desc">Fragrant basmati rice cooked with mixed vegetables and spices – ₹150</p>
+        </div>
+        <div class="menu-item">
+          <h3>Chole Bhature</h3>
+          <p class="menu-item-desc">Spicy chickpeas served with fluffy deep-fried bread – ₹100</p>
+        </div>
+        <div class="menu-item">
+          <h3>Ghee Idli with Sambar</h3>
+          <p class="menu-item-desc">Soft rice cakes topped with ghee and served with sambar – ₹70</p>
+        </div>
+      </div>
+
+      <div id="Drinks" class="menu-panel">
+        <div class="menu-item">
+          <h3>Filter Coffee</h3>
+          <p class="menu-item-desc">Authentic South Indian strong coffee – ₹30</p>
+        </div>
+        <div class="menu-item">
+          <h3>Masala Chai</h3>
+          <p class="menu-item-desc">Aromatic Indian tea with spices – ₹25</p>
+        </div>
+        <div class="menu-item">
+          <h3>Lassi</h3>
+          <p class="menu-item-desc">Sweet or salty traditional Punjabi yogurt drink – ₹40</p>
+        </div>
+        <div class="menu-item">
+          <h3>Badam Milk</h3>
+          <p class="menu-item-desc">Warm milk infused with almonds and saffron – ₹50</p>
+        </div>
+        <div class="menu-item">
+          <h3>Nimbu Pani</h3>
+          <p class="menu-item-desc">Refreshing lemon drink – ₹20</p>
+        </div>
+      </div>
+
+      <img src="./images/cafe-coffee-design-tasty.jpg" alt="cafefood" class="img-full">
+    </section>
+
+    <section class="content-section" id="where">
+      <h2 class="section-title"><span class="tag">WHERE TO FIND US</span></h2>
+      <p>Visit us at Madhapur, Hyderabad – a cozy spot to enjoy your chai and chat with friends!</p>
+      <img src="./images/61IHLDjNYoL._AC_UF1000,1000_QL80_.jpg" alt="Location map" class="img-full">
+      <p><span class="tag">Did You Know?</span> We cater events like weddings, birthdays, and corporate parties with a special Indian buffet menu!</p>
+      <p><strong>Reserve</strong> a table or ask for today's South Indian special using the form below:</p>
+
+      <form action="./index.html">    
+        <input class="form-input" type="text" placeholder="Name" required name="Name">
+        <input class="form-input" type="number" placeholder="How many people" required name="People">
+        <input class="form-input" type="datetime-local" placeholder="Date and time" required name="date">
+        <input class="form-input" type="text" placeholder="Message / Special requests" required name="Message">
+        <button class="submit-button" type="submit">SEND MESSAGE</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 Vathsalya's Cafe. Crafted with love in Hyderabad, India.</p>
+  </footer>
+
+  <script>
+    function openMenu(menuName) {
+      var panels = document.getElementsByClassName("menu-panel");
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].classList.remove("active");
+      }
+
+      var tabs = document.getElementsByClassName("menu-tab");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
+
+      document.getElementById(menuName).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
